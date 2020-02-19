@@ -19,8 +19,13 @@
   </div>
 
   <p class="list-group-item list-group-item-secondary"> <%= @task.details %> </p>
+  <% if @task.completed == true %>
+    <%= "This task is completed" %>
+  <% else %>
+    <%= "This task is not completed yet" %>
+  <% end %>
 
-  <p> This task is <%=@task.completed%></p>
+
 
   <p><i class="fas fa-redo"></i>     <%= link_to 'Back to list', index_path %></p>
 

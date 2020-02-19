@@ -16,6 +16,11 @@
       <%= f.text_area :details, class: 'form-control' %>
     </div>
 
+    <div>
+      <%= f.label :completed %>
+      <%= f.check_box :completed %>
+    </div>
+
     <%= f.submit class: 'btn btn-primary' %>
   <% end %>
   <br>
